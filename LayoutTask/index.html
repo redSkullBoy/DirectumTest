@@ -57,6 +57,15 @@
 			font-weight: 400;
 			word-wrap: break-word
 		}
+		.register-block__field {
+			color: #000;
+			font-family: Segoe UI;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			margin-bottom: 0;
+		}
 		.register-block__field-name {
 			color: black;
 			font-size: 16px;
@@ -72,6 +81,9 @@
 			font-weight: 400;
 			word-wrap: break-word;
 			margin-bottom: 0;
+		}
+		.register-block__fields-xs {
+			display: none;
 		}
 		.welcome-register-block {
 			background: #F8F9FA;
@@ -108,6 +120,10 @@
 			font-weight: 600;
 			word-wrap: break-word;
 			padding-bottom: 32px;
+			display: none;
+		}
+		.our-speakers-block__title-md {
+			display: block;
 		}
 		.our-speakers-card-block {
 			flex-direction: column;
@@ -152,28 +168,63 @@
 		.header-block__img-row {
 			padding-bottom: 48px;
 		}
-		@media (mix-width: 769px){
+		@media (mix-width: 768px){
 			.welcome-block__text-bold {
 				font-weight: bold;
 			}
 		}
 
-
-		@media (max-width: 769px) {
+		@media (max-width: 767.98px) {
 			.header-block {
 				padding-top: 333px;
 				padding-bottom: 333px;
 			}
+
 			.footer-block {
 				background: #F8F9FA;
 				padding-top: 20px;
 				padding-bottom: 4px;
 			}
+
 			.welcome-block__title {
 				text-align: left;
 			}
+
 			.welcome-block__text {
 				text-align: left;
+			}
+
+			.our-speakers-block__title {
+				display: block;
+			}
+
+			.our-speakers-block__title-md {
+				display: none;
+			}
+
+			.register-block__fields {
+				display: none;
+			}
+
+			.register-block__fields-xs {
+				display: block;
+			}
+		}
+
+		@media (max-width: 575.98px) {
+			.header-block {
+				padding-top: 105px;
+				padding-bottom: 105px;
+			}
+
+			.footer-block {
+				background: #F8F9FA;
+				padding-top: 20px;
+				padding-bottom: 4px;
+			}
+
+			.welcome-block {
+				display: none;
 			}
 		}
   </style>
@@ -212,7 +263,7 @@
 						<p class="register-block__title">Регистрация</p>
 						<p class="register-block__text">Пожалуйста, проверьте правильность введенных данных:</p>
 
-						<div class="row">
+						<div class="row register-block__fields">
 							<div class="col-3">
 								<p class="register-block__field-name">ФИО:</p>
 								<p class="register-block__field-name">Место работы:</p>
@@ -227,6 +278,13 @@
 
 						</div>
 
+						<div class="row register-block__fields register-block__fields-xs">
+							<p class="register-block__field">ФИО: Иванов Иван Иванович</p>
+							<p class="register-block__field">Место работы: DIRECTUM</p>
+							<p class="register-block__field">E-mail: ivanov_ii@directum.ru</p>
+
+						</div>
+
 					</div>
 
 				</div>
@@ -236,11 +294,12 @@
     </section>
 
     <section class="container">
-      <div class="row our-speakers-block">
-        <p class="our-speakers-block__title">Наши спикеры</p>
+			<div class="row our-speakers-block">
+				<p class="our-speakers-block__title our-speakers-block__title-md">Наши спикеры</p>
+				<p class="our-speakers-block__title">Готовятся к общению</p>
 
 				<div class="row justify-content-center">
-					<div class="col-3 col-md-4">
+					<div class="сol col-xs-3 col-md-4">
 						<div class="our-speakers-card-block">
 							<img class="our-speakers-card-block__img" src="src\img\image.png" />
 							<div class="our-speakers-card-block__title">Детектив пикачу</div>
@@ -251,7 +310,7 @@
 
 					</div>
 
-					<div class="col-3 col-md-4">
+					<div class="сol col-xs-3 col-md-4">
 						<div class="our-speakers-card-block">
 							<img class="our-speakers-card-block__img" src="src\img\image.png" />
 							<div class="our-speakers-card-block__title">Детектив пикачу</div>
@@ -262,7 +321,7 @@
 
 					</div>
 
-					<div class="col-3 col-md-4">
+					<div class="сol col-xs-3 col-md-4">
 						<div class="our-speakers-card-block">
 							<img class="our-speakers-card-block__img" src="src\img\image.png" />
 							<div class="our-speakers-card-block__title">Детектив пикачу</div>
@@ -273,7 +332,7 @@
 
 					</div>
 
-					<div class="col-3 col-md-4">
+					<div class="сol col-xs-3 col-md-4">
 						<div class="our-speakers-card-block">
 							<img class="our-speakers-card-block__img" src="src\img\image.png" />
 							<div class="our-speakers-card-block__title">Детектив пикачу</div>
@@ -284,7 +343,7 @@
 
 					</div>
 
-					<div class="col-3 col-md-4">
+					<div class="сol col-xs-3 col-md-4">
 						<div class="our-speakers-card-block">
 							<img class="our-speakers-card-block__img" src="src\img\image.png" />
 							<div class="our-speakers-card-block__title">Детектив пикачу</div>
@@ -295,7 +354,7 @@
 
 					</div>
 
-					<div class="col-3 col-md-4">
+					<div class="сol col-xs-3 col-md-4">
 						<div class="our-speakers-card-block">
 							<img class="our-speakers-card-block__img" src="src\img\image.png" />
 							<div class="our-speakers-card-block__title">Детектив пикачу</div>
@@ -307,7 +366,7 @@
 					</div>
 				</div>
 
-      </div>
+			</div>
 
     </section>
 
