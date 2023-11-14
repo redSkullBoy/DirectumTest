@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeAnalysis", "CodeAnalysi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerDev", "ServerDev\ServerDev.csproj", "{FEF957B1-1F73-41B9-B54C-FCF9049EF187}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{9FABE5F9-DDFD-430D-9A57-75360A3D4D49}"
+	ProjectSection(SolutionItems) = preProject
+		LayoutTask\index.html = LayoutTask\index.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
